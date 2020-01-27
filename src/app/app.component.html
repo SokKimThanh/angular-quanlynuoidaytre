@@ -1,0 +1,40 @@
+<<<<<<< HEAD
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+=======
+<div class="main">
+  <!--==============================header=================================-->
+  <header class="zerogrid">
+    <h1>
+      <a [routerLink]="['/index']"><img src="assets/images/logo.png" alt="" /></a>
+    </h1>
+    <nav>
+      <div id="slide">
+        <div class="slider">
+          <ul class="items">
+            <li><img src="assets/images/slider-1.jpg" alt="" /></li>
+            <li><img src="assets/images/slider-2.jpg" alt="" /></li>
+            <li><img src="assets/images/slider-3.jpg" alt="" /></li>
+          </ul>
+        </div>
+        <a href="#" class="prev"></a><a href="#" class="next"></a>
+      </div>
+      <ul class="menu">
+        <li class="current"><a [routerLink]="['/index']" class="clr-1">Home</a></li>
+        <li><a [routerLink]="['/about']" class="clr-2">About</a></li>
+        <li><a [routerLink]="['/schedule']" class="clr-3">Schedule</a></li>
+        <li><a [routerLink]="['/gallery']" class="clr-4">Gallery</a></li>
+        <li><a [routerLink]="['/contact']" class="clr-5">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--==============================content================================-->
+  <section id="content">
+    <div class="zerogrid">
+      <router-outlet></router-outlet>
+    </div>
+  </section>
+</div>
+>>>>>>> Upload template Quan Ly Nuoi Day Tre
