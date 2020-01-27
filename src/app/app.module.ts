@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-
-import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
-import { ThongtintreComponent } from './thongtintre/thongtintre.component';
-
-@NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, ThongtintreComponent ],
-  bootstrap:    [ AppComponent ]
-=======
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -40,6 +26,5 @@ import { FooterComponent } from './footer/footer.component';
   ],
   providers: [],
   bootstrap: [AppComponent]
->>>>>>> Upload template Quan Ly Nuoi Day Tre
 })
 export class AppModule { }
