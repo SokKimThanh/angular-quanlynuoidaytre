@@ -20,13 +20,29 @@
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "src/assets/",
+                "output": "/assets/"
+              },
+              {
+                "glob": "favicon.ico",
+                "input": "src/",
+                "output": "/"
+              }
             ],
             "styles": [
-              "src/styles.css"
+              {
+                "input": "src/styles.css",
+                "inject": false
+              }
             ],
-            "scripts": []
+            "scripts": [
+              {
+                "input": "node_modules/jquery/dist/jquery.min.js",
+                "inject": false
+              }
+            ]
           },
           "configurations": {
             "production": {
@@ -85,13 +101,29 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "src/assets/",
+                "output": "/assets/"
+              },
+              {
+                "glob": "favicon.ico",
+                "input": "src/",
+                "output": "/"
+              }
             ],
             "styles": [
-              "src/styles.css"
+              {
+                "input": "src/styles.css",
+                "inject": false
+              }
             ],
-            "scripts": []
+            "scripts": [
+              {
+                "input": "node_modules/jquery/dist/jquery.min.js",
+                "inject": false
+              }
+            ]
           }
         },
         "lint": {
@@ -120,6 +152,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "quanlynuoidaytre"
 }
